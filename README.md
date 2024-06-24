@@ -1,35 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Webpage</title>
-    <script>
-        function changeBackgroundColor() {
-            let color = prompt("Enter a background color (name or hex code):", "#ffffff");
-            document.body.style.backgroundColor = color;
-        }
-
-        function displayUserName() {
-            let name = prompt("Enter your name:", "Guest");
-            document.getElementById("greeting").innerText = "Hello, " + name + "!";
-        }
-        function checkUserAge() {
-            let age = prompt("Enter your age:", "0");
-            if (parseInt(age) >= 18) {
-                alert("You are an adult.");
-            } else {
-                alert("You are not an adult.");
-            }
-        }
-        window.onload = function() {
-            changeBackgroundColor();
-            displayUserName();
-            checkUserAge();
-        }
-    </script>
-</head>
-<body>
-    <h1 id="greeting"></h1>
-</body>
-</html>
+1. Create a webpage that changes the background color based on user input using prompt.
+2. Use prompt to get the user's name and display it using document.write.
+3. Use prompt to check the user's age and display an alert indicating if the user is an adult or not.
